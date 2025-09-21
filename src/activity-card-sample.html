@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Activity Card — Participants Demo</title>
+  <link rel="stylesheet" href="static/styles.css" />
+</head>
+<body>
+  <main>
+    <section class="activity-card">
+      <!-- use h3 to match section styling and proper heading order -->
+      <h3>Community Hike</h3>
+      <p>Join us for an easy 5km trail walk through the local park. Bring water and good shoes.</p>
+
+      <div class="participants" role="region" aria-labelledby="participants-heading-1">
+        <div class="participants-header">
+          <h5 id="participants-heading-1">Participants</h5>
+          <span class="participants-count" aria-hidden="true">3</span>
+        </div>
+
+        <ul class="participants-list" aria-labelledby="participants-heading-1">
+          <li>
+            <span class="avatar" aria-hidden="true">AL</span>
+            <div class="participant-meta">
+              <span class="participant-name">Alice Lee</span>
+              <span class="participant-note">Organizer</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="avatar" aria-hidden="true">MJ</span>
+            <div class="participant-meta">
+              <span class="participant-name">Michael Jones</span>
+              <span class="participant-note">Member</span>
+            </div>
+          </li>
+
+          <li>
+            <span class="avatar" aria-hidden="true">SB</span>
+            <div class="participant-meta">
+              <span class="participant-name">Sofia Brown</span>
+              <span class="participant-note">Member</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Example of an empty participants state -->
+    <section class="activity-card">
+      <h3>Evening Coding Session</h3>
+      <p>Casual coding night: bring your laptop and a problem you'd like to work on.</p>
+
+      <div class="participants" role="region" aria-labelledby="participants-heading-2">
+        <div class="participants-header">
+          <h5 id="participants-heading-2">Participants</h5>
+          <span class="participants-count" aria-hidden="true">0</span>
+        </div>
+
+        <div class="participants-empty">No one has signed up yet — be the first!</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
